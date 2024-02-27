@@ -28,6 +28,8 @@ int main()
 {
     testlsEven();
     setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
     cout << "Добро пожаловать в игру!\n";
     string name;
     cout << "Как я могу Вас называть? \n";
