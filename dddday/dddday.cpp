@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string>
 #include <cstdlib> // Добавляем библиотеку для функции rand()
+#include <cassert>
 using namespace std;
 
 bool isEven(int number)
@@ -15,9 +16,17 @@ int rand_numb(int start = 10, int end = 100)
     int x = rand() % (end - start + 1) + start;
     return x; // Возвращаем сгенерированное случайное число
 }
+void testlsEven()
+{
+    assert(isEven(2)==true);
+    assert(isEven(3)==false);
+    assert(isEven(4)==true);
+    assert(isEven(-1)==false);
+}
 
 int main()
 {
+    testlsEven();
     setlocale(LC_ALL, "Russian");
     cout << "Добро пожаловать в игру!\n";
     string name;
