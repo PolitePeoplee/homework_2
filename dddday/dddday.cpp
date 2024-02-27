@@ -46,12 +46,12 @@ int main()
             cout << "Молодец, " << name << "!\n";
         else if (isEven(randdd_nommm) && ansver == "no") 
         {
-            cout << " переделай, " << name << "!\n";
+            cout << "Переделай, " << name << "!\n";
             return 0;
         }
         else if (!isEven(randdd_nommm) && ansver == "yes")
         {
-            cout << " переделай, " << name << "!\n";
+            cout << "Переделай, " << name << "!\n";
             return 0;
         }
         else if (!isEven(randdd_nommm) && ansver == "no")
